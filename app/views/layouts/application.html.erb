@@ -10,23 +10,22 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-sm">
-        <div class="container">
-              <%= link_to "冒牌绿帽子大学", 'http://www.leego.tw', id: "logo" %>
-              <nav>
-                <ul class="nav navbar-nav mr-auto">
-                  <li><%= link_to "主页", '#'%></li> | 
-                  <li><%= link_to "介绍", '#'%></li> |
-                  <li><%= link_to "注册", '#'%></li>
-                </ul>
-              </nav>
+    <header class="navbar navbar-expand-sm ">
+      <div class="container">
+        <%= link_to "冒牌绿帽子大学", 'http://www.leego.tw', id: "logo" %>
+          <nav>
+            <ul class="nav navbar-nav mr-auto">
+              <li><%= link_to "主页", '#'%></li> | 
+              <li><%= link_to "介绍", '#'%></li> |
+              <li><%= link_to "注册", '#'%></li>
+            </ul>
+          </nav>
         </div>
       </nav>
     </header>
-    <br />
-    <br />
-    <br />
+    
+    <div class="container">
     <%= yield %>
+    </div>
   </body>
 </html>
