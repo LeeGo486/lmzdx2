@@ -1,13 +1,12 @@
 module ApplicationHelper
   def full_title(page_title = "")
     base_title = "冒牌绿帽子大学"
-    # if !page_title.empty?
-    #   base_title
-    # else
-    #   page_title + " | " + base_title
-    # end  
-    if !page_title.empty?
+    
+    if page_title.empty?
+      base_title
+    else
       page_title + " | " + base_title
     end
+    
   end
 end
