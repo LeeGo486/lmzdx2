@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/new'
   get 'credit_cards/open'
   get 'credit_cards/debit'
   get 'credit_cards/credit'
